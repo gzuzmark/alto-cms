@@ -1,0 +1,189 @@
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "";
+}
+
+.top {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 100px 2fr 1fr;
+}
+
+.logo {
+
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  font-size: 1.5rem;
+}
+
+.menu a {
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1em;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu a:hover:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+/* .search-container {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+} */
+
+.search-form {
+  display: grid;
+  grid-gap: 14px;
+  grid-template-areas:
+    "label label"
+    "input button"
+}
+
+.search-label {
+  grid-area: label;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.input-area {
+  grid-area: input;
+  border-radius: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.button-area {
+  grid-area: button;
+  text-transform: uppercase;
+}
+
+/* .search-form label {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
+} */
+
+
+
+
+.hero {
+  min-height: 400px;
+  background: white url(assets/landscape-pexels.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.hero>* {
+  background: var(--yellow);
+  padding: 5px;
+}
+
+
+.about {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 20px;
+}
+
+.about__image {
+  height: 400px;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon {
+  font-size: 50px;
+}
+
+.feature p {
+  color: rgba(0, 0, 0, 0.5);
+}
