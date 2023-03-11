@@ -1,0 +1,15 @@
+.hero {
+    min-height: 400px;
+    background: white url(/src/assets/landscape-pexels.jpg);
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.hero>* {
+    background: var(--yellow);
+    padding: 5px;
+}

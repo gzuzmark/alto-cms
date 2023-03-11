@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@tanstack/react-location": "^3.7.4",    
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -24,6 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "@tanstack/react-location-devtools": "^3.4.4",
     "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",

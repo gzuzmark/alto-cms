@@ -1,0 +1,70 @@
+.top {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100px 2fr 1fr;
+}
+
+
+
+.menu ul {
+    display: grid;
+    grid-gap: 10px;
+    justify-items: end;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    font-size: 1.5rem;
+}
+
+.menu a {
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1em;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.menu a:hover:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+[aria-controls="menu-list"] {
+    display: none;
+}
+
+.search-form {
+    display: grid;
+    grid-gap: 14px;
+    grid-template-areas:
+        "label label"
+        "input button"
+}
+
+.search-label {
+    grid-area: label;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.input-area {
+    grid-area: input;
+    border-radius: 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.button-area {
+    grid-area: button;
+    text-transform: uppercase;
+}
