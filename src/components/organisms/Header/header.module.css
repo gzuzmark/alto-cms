@@ -1,11 +1,3 @@
-.top {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 100px 2fr 1fr;
-}
-
-
-
 .menu ul {
     display: grid;
     grid-gap: 10px;

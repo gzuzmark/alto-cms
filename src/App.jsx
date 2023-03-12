@@ -5,6 +5,7 @@ import HomePage from './pages/Home';
 import About from './components/templates/About';
 import Contact from './components/templates/Contact';
 import { Header } from './components/organisms';
+import { MainLayout } from './components/organisms/MainLayout';
 
 const reactLocation = new ReactLocation();
 
@@ -26,7 +27,7 @@ const routes = [
 function App() {
   return (
     <Router routes={routes} location={reactLocation}>
-      <HomePage />
+      <MainLayout />
       <ReactLocationDevtools initialIsOpen={false} />
     </Router>
   );

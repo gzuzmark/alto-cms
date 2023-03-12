@@ -1,0 +1,51 @@
+.search__form {
+    display: grid;
+    grid-gap: 14px;
+    grid-template-areas:
+        "label label"
+        "input button"
+}
+
+.search__label {
+    grid-area: label;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.input__area {
+    grid-area: input;
+    border-radius: 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.button__area {
+    grid-area: button;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid var(--lightGrey);
+}
+
+.dropdown__item {
+    border-bottom: 1px solid var(--lightGrey);
+    background: 'white';
+    padding: 1rem;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    border-left: 10px solid
+}
+
+.dropdown__item img {
+    margin-right: 10px;
+}

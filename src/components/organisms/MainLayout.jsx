@@ -3,8 +3,10 @@ import { Header } from '.';
 import styles from './layout.module.css';
 
 export const MainLayout = () => (
-  <div className={styles.wrapper}>
-    <Header />
+  <>
+    <header className="top">
+      <Header />
+    </header>
     <Outlet />
-  </div>
+  </>
 );

@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { Outlet } from '@tanstack/react-location';
-import { Header } from '../organisms';
+import { Hero, Posts } from '../organisms';
 import styles from './home.module.css';
 
-export const HomeTemplate = ({ layout }) => (
+export const HomeTemplate = ({ hero, posts }) => (
   <div className={styles.wrapper}>
-    <Header />
-    <Outlet />
+    {hero}
+    {posts}
   </div>
 );
