@@ -1,18 +1,19 @@
 import './App.css';
 import { ReactLocation, Router, Outlet, Link } from '@tanstack/react-location';
 import { ReactLocationDevtools } from '@tanstack/react-location-devtools';
-import HomePage from './pages/Home';
-import About from './components/templates/About';
-import Contact from './components/templates/Contact';
-import { Header } from './components/organisms';
+import { Home } from './components/pages/Home';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 import { MainLayout } from './components/organisms/MainLayout';
+import { Posts } from './components/pages/Posts';
+import { AddPost } from './components/pages/AddPost';
 
 const reactLocation = new ReactLocation();
 
 const routes = [
   {
     path: '/',
-    element: <HomePage />,
+    element: <Home />,
   },
   {
     path: 'about',
@@ -21,6 +22,14 @@ const routes = [
   {
     path: 'contact',
     element: <Contact />,
+  },
+  {
+    path: 'blog/posts/add',
+    element: <AddPost />,
+  },
+  {
+    path: 'blog',
+    element: <Posts />,
   },
 ];
 

@@ -1,4 +1,3 @@
-import { visitFunctionBody } from 'typescript';
 import styles from './mainpost.module.css';
 
 export const MainPost = ({ post }) => (

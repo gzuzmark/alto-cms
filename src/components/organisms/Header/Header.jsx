@@ -16,13 +16,13 @@ export const Header = () => {
         </button>
         <ul id="menu-list">
           <li>
-            <Link to="home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="about">About</Link>
           </li>
           <li>
-            <Link to="/">Blog</Link>
+            <Link to="blog">Blog</Link>
           </li>
           <li>
             <Link to="contact">Contact</Link>

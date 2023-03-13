@@ -31,19 +31,30 @@
 
 .dropdown {
     position: absolute;
-    width: 100%;
+    top: 10rem;
+    width: 20rem;
     z-index: 2;
     border: 1px solid var(--lightGrey);
+    padding: 0;
+    list-style: none;
 }
 
 .dropdown__item {
     border-bottom: 1px solid var(--lightGrey);
-    background: 'white';
+    background: var(--light);
+    border-left: 10px solid var(--light);
     padding: 1rem;
     transition: all 0.2s;
     display: flex;
     align-items: center;
-    border-left: 10px solid
+    border-left: 10px solid;
+    cursor: pointer
+}
+
+li:hover:focus {
+    background: var(--lightGrey);
+    padding-left: 2rem;
+    border-left: 10px solid var(--lightGrey)
 }
 
 .dropdown__item img {

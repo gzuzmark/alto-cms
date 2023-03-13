@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-
 import styles from './home.module.css';
 
-export const HomeTemplate = ({ hero, posts }) => (
+export const PostsTemplate = ({ addPostLink, posts }) => (
   <div className={styles.wrapper}>
-    {hero}
+    {addPostLink}
     {posts}
   </div>
 );

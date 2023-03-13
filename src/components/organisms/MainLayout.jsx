@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 
 export const MainLayout = () => (
   <>
-    <header className="top">
+    <header className={styles.top}>
       <Header />
     </header>
     <Outlet />
