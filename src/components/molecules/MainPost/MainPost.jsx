@@ -1,3 +1,4 @@
+import { Button } from '../../atoms/Button/Button';
 import styles from './mainpost.module.css';
 
 export const MainPost = ({ post }) => (
@@ -9,7 +10,9 @@ export const MainPost = ({ post }) => (
       <h2>{post.title}</h2>
 
       <p>{post.body}</p>
-      <button type="button">Learn More →</button>
+      <Button href={`/blog/posts/${post.id}`} type="button">
+        Learn More →
+      </Button>
     </div>
   </>
 );

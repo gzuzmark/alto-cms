@@ -1,6 +1,5 @@
-import { ButtonOrLink, Props as ButtonOrLinkProps } from './ButtonOrLink';
-import styles from './button.module.css';
+import { ButtonOrLink } from '../ButtonOrLink/ButtonLink';
 
 export function Button({ ...props }) {
-  return <ButtonOrLink className={styles.button} {...props} />;
+  return <ButtonOrLink {...props} />;
 }

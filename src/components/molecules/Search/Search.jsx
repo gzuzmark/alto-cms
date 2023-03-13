@@ -1,6 +1,7 @@
 import { Link, useNavigate } from '@tanstack/react-location';
 import { useEffect, useRef, useMemo, useState } from 'react';
 import { usePosts } from '../../../lib/usePosts';
+import { Button } from '../../atoms';
 import styles from './search.module.css';
 
 export const Search = () => {
@@ -18,7 +19,7 @@ export const Search = () => {
   const onSelectedItemChange = (e, id) => {
     e.preventDefault();
     setIsOpen(false);
-    navigate({ to: `post/${id}`, replace: true });
+    navigate({ to: `/blog/posts/${id}`, replace: true });
   };
 
   useEffect(() => {
@@ -40,8 +41,13 @@ export const Search = () => {
     [search, posts]
   );
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    navigate({ to: `/blog?search=${search}` });
+  };
+
   return (
-    <form className={styles.search__form}>
+    <form className={styles.search__form} onSubmit={handleSearch}>
       <label htmlFor="search" className={styles.search__label}>
         Search the site{' '}
       </label>
@@ -76,9 +82,9 @@ export const Search = () => {
         </ul>
       )}
 
-      <button type="submit" aria-label="search" className={styles.button__area}>
+      <Button type="submit" aria-label="search" className={styles.button__area}>
         Search
-      </button>
+      </Button>
     </form>
   );
 };

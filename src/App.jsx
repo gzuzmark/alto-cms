@@ -7,6 +7,8 @@ import Contact from './components/pages/Contact';
 import { MainLayout } from './components/organisms/MainLayout';
 import { Posts } from './components/pages/Posts';
 import { AddPost } from './components/pages/AddPost';
+import { PostPage } from './components/pages/Post';
+import { EditPostPage } from './components/pages/EditPost';
 
 const reactLocation = new ReactLocation();
 
@@ -22,6 +24,14 @@ const routes = [
   {
     path: 'contact',
     element: <Contact />,
+  },
+  {
+    path: 'blog/posts/:postId/edit',
+    element: <EditPostPage />,
+  },
+  {
+    path: 'blog/posts/:postId',
+    element: <PostPage />,
   },
   {
     path: 'blog/posts/add',

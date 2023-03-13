@@ -1,0 +1,11 @@
+.action__link {
+    background: #d459ab;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 900;
+    line-height: .75;
+    margin-top: 0.75rem;
+    padding: 0.625rem 0.75rem;
+    text-transform: uppercase;
+}

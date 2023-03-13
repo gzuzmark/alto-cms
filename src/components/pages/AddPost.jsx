@@ -1,5 +1,3 @@
-export const AddPost = () => (
-  <div>
-    <p>AddPost</p>
-  </div>
-);
+import { AddPostTemplate } from '../templates/AddPost';
+
+export const AddPost = () => <AddPostTemplate />;

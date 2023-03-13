@@ -2,11 +2,11 @@ export const posts = [
   {
     id: 'n325',
     title: 'new photography styles',
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-    mollit anim id est laborum.`,
+    body: `<h1>new photography styles</h1>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,assumenda<strong>assumenda</strong> Animi,assumenda<br> <em>Vitalic Buterin</em>
+    said...
+   </p>`,
     image:
       'https://images.pexels.com/photos/15641525/pexels-photo-15641525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
